@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Strength Checker</title>
+    <style>
+        body {font-family:Arial; margin:40px; text-align: center; background: linear-gradient(to right, #fdffda, #fffcd1, #fffdbc);}
+        .weak{color:red; font-weight: bold; }
+        .medium{ color: orange; font-weight: bold;}
+        .strong{ color: green; font-weight: bold;}
+        h1{color:rgb(120, 7, 120); text-decoration:underline}
+        button{background:rgb(120, 7, 120); color:rgb(253, 255, 247); padding:10px 20px; border:none; border-radius:5px; cursor:pointer;}
+        button:hover{background:rgb(180, 12, 180);}
+        input{padding:10px; border:2px solid #000000; border-radius:5px; background-color: rgb(250, 209, 0) ;}
+        input:focus{outline:none; border-color:rgb(120, 7, 120);}
+        h3{margin-top:20px;}
+    </style>
+</head>
+<body>
+    <h1>Password Strength Checker</h1>
+    <form method="POST">
+        <input type="password" name="password" placeholder="Enter your password" required>
+        <button type="submit">Check</button>
+    </form>
+    {% if result %}
+        <h3>
+            Strength:
+            <span class="{{result | lower}}">{{result}}</span>
+        </h3>
+    {% endif %}
+</body>
+</html>
