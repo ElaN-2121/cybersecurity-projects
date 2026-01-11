@@ -1,5 +1,5 @@
 # cybersecurity-projects
-This repository contains my beginner cybersecurity projects completed over 3 months.   Each project is designed to practice coding, networking, and security fundamentals.
+This repository contains my beginner cybersecurity projects. Each project is designed to practice coding, networking, and security fundamentals.
 
 > ## 📂 Projects
 > 1. **Password Strength Checker** → Python tool that evaluates password strength.  
