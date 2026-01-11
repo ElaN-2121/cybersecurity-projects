@@ -13,5 +13,3 @@ This repository contains my beginner cybersecurity projects completed over 3 mon
 > - Python scripting  
 > - Networking (ports, packets, protocols)  
 > - Vulnerability scanning  
-> - Intrusion detection basics  
-> - Documentation & reporting  
